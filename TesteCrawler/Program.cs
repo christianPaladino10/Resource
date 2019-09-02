@@ -23,7 +23,7 @@ namespace TesteCrawler
         {
             StreamReader x;
             string texto = "";
-            string caminho = "C:\\Users\\chris\\source\\repos\\TesteResource\\TesteCrawler\\bin\\Debug\\texto.txt";
+            string caminho = "\\texto.txt";
             x = File.OpenText(caminho);
 
             while (x.EndOfStream != true)
@@ -60,7 +60,7 @@ namespace TesteCrawler
         private static void SalvarArquivoTexto(string cotacaoDolar)
         {
             StreamWriter x;
-            string caminho = "C:\\Users\\chris\\source\\repos\\TesteResource\\TesteCrawler\\bin\\Debug\\arqCotDollar.txt";
+            string caminho = ".\\arqCotDollar.txt";
 
             x = File.CreateText(caminho);
 
@@ -71,7 +71,7 @@ namespace TesteCrawler
         private static void SalvarArquivoTexto(MatchCollection encontrados)
         {
             StreamWriter x;
-            string caminho = "C:\\Users\\chris\\source\\repos\\TesteResource\\TesteCrawler\\bin\\Debug\\textoRegex.txt";
+            string caminho = "\\textoRegex.txt";
 
             x = File.CreateText(caminho);
 
