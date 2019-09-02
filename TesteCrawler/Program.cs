@@ -43,7 +43,8 @@ namespace TesteCrawler
         {
             var url = "https://www.valor.com.br/valor-data";
             var httpClient = new HttpClient();
-            var html = await httpClient.GetStringAsync(url);
+            //var html = await httpClient.GetStringAsync(url);
+            var html = httpClient.GetStringAsync(url).Result;
 
             var htmlDocument = new HtmlDocument();
             htmlDocument.LoadHtml(html);
