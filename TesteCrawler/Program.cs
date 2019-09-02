@@ -23,7 +23,7 @@ namespace TesteCrawler
         {
             StreamReader x;
             string texto = "";
-            string caminho = "\\texto.txt";
+            string caminho = ".\\texto.txt";
             x = File.OpenText(caminho);
 
             while (x.EndOfStream != true)
@@ -71,7 +71,7 @@ namespace TesteCrawler
         private static void SalvarArquivoTexto(MatchCollection encontrados)
         {
             StreamWriter x;
-            string caminho = "\\textoRegex.txt";
+            string caminho = ".\\textoRegex.txt";
 
             x = File.CreateText(caminho);
 
